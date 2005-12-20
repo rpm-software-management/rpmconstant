@@ -18,6 +18,8 @@ RPM_INCLUDE_DIR = /usr/include/rpm
 BUILT_SOURCES = rpmconstanttbl.c
 CLEANFILES = rpmconstanttbl.c
 
+AM_CFLAGS=-I$(RPM_INCLUDE_DIR)
+
 rpmconstanttbl.c: Makefile.am rpmh2tbl
 	$(top_srcdir)/rpmh2tbl $(RPM_INCLUDE_DIR)/*.h > $@
 

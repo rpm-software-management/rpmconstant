@@ -1,4 +1,4 @@
-/* Nanar <nanardon@mandrake.org>
+/* Nanar <nanardon@zarb.org>
  * $Id$
  */
 

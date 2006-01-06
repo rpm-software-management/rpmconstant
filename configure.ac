@@ -3,7 +3,7 @@
 # $Id$
 
 AC_PREREQ(2.59)
-AC_INIT(rpmconstant, 0.1.0, nanardon@zarb.org)
+AC_INIT(rpmconstant, 0.1.2, nanardon@zarb.org)
 AC_CONFIG_SRCDIR([rpmconstant.c])
 AM_INIT_AUTOMAKE(1.8)
 

@@ -1,18 +1,77 @@
 ------------------------------------------------------------------------
-r29 | nanardon | 2005-10-04 04:29:56 +0200 (mar, 04 oct 2005) | 1 line
-Chemins modifiés :
+r92 | nanardon | 2006-01-06 12:47:45 +0100 (Fri, 06 Jan 2006) | 1 line
+Changed paths:
+   M /trunk/rpmconstant/configure.ac
+
+- bump version
+------------------------------------------------------------------------
+r80 | nanardon | 2005-12-20 11:57:52 +0100 (Tue, 20 Dec 2005) | 1 line
+Changed paths:
+   M /trunk/rpmconstant/Makefile.am
+
+- add -I rpm headers location
+------------------------------------------------------------------------
+r79 | nanardon | 2005-12-20 02:35:08 +0100 (Tue, 20 Dec 2005) | 1 line
+Changed paths:
+   M /trunk/RPM4/bin/hrpmreb
+   M /trunk/RPM4/bin/rpm_produced
+   M /trunk/RPM4/bin/urpm_interactive
+   M /trunk/RPM4/examples/hbuildspec
+   M /trunk/RPM4/examples/hdlist2sdb
+   M /trunk/RPM4/examples/hdlistq
+   M /trunk/RPM4/examples/hdrpmq
+   M /trunk/RPM4/examples/rpminstall
+   M /trunk/RPM4/examples/specwillbuild
+   M /trunk/RPM4/lib/RPM4/Header/Changelogs.pm
+   M /trunk/RPM4/lib/RPM4/Header/Dependencies.pm
+   M /trunk/RPM4/lib/RPM4/Header/Files.pm
+   M /trunk/RPM4/lib/RPM4/Header.pm
+   M /trunk/RPM4/lib/RPM4/Index.pm
+   M /trunk/RPM4/lib/RPM4/Media.pm
+   M /trunk/RPM4/lib/RPM4/Spec.pm
+   M /trunk/RPM4/lib/RPM4/Transaction/Problems.pm
+   M /trunk/RPM4/lib/RPM4/Transaction.pm
+   M /trunk/RPM4/lib/RPM4.pm
+   M /trunk/RPM4/src/RPM4.xs
+   M /trunk/rpmconstant/AUTHORS
+   M /trunk/rpmconstant/constant.c
+   M /trunk/rpmconstant/rpmconstant.c
+   M /trunk/rpmconstant/rpmconstant.h
+   M /trunk/rpmconstant/rpmconstant_internal.c
+   M /trunk/rpmconstant/rpmh2tbl
+
+- fix mail address
+------------------------------------------------------------------------
+r40 | nanardon | 2005-10-05 23:53:25 +0200 (Wed, 05 Oct 2005) | 1 line
+Changed paths:
+   M /trunk/RPM4/Makefile.PL
+   M /trunk/rpmconstant/Makefile.am
+
+- use LC_ALL=C to make changelog
+------------------------------------------------------------------------
+r35 | nanardon | 2005-10-04 06:07:38 +0200 (Tue, 04 Oct 2005) | 1 line
+Changed paths:
+   D /rpmconstant
+   A /trunk/rpmconstant (from /rpmconstant:32)
+   M /trunk/rpmconstant/ChangeLog
+   M /trunk/rpmconstant/configure.ac
+
+- move to trunk
+------------------------------------------------------------------------
+r29 | nanardon | 2005-10-04 04:29:56 +0200 (Tue, 04 Oct 2005) | 1 line
+Changed paths:
    M /rpmconstant/Makefile.am
 
 - ChangeLog from svn now
 ------------------------------------------------------------------------
-r28 | nanardon | 2005-10-04 04:19:57 +0200 (mar, 04 oct 2005) | 1 line
-Chemins modifiés :
+r28 | nanardon | 2005-10-04 04:19:57 +0200 (Tue, 04 Oct 2005) | 1 line
+Changed paths:
    M /rpmconstant/configure.ac
 
 - fix email adress
 ------------------------------------------------------------------------
-r1 | nanardon | 2005-07-07 12:14:03 +0200 (jeu, 07 jui 2005) | 2 lines
-Chemins modifiés :
+r1 | nanardon | 2005-07-07 12:14:03 +0200 (Thu, 07 Jul 2005) | 2 lines
+Changed paths:
    A /rpmconstant
    A /rpmconstant/AUTHORS
    A /rpmconstant/COPYING

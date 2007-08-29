@@ -1,4 +1,19 @@
 ------------------------------------------------------------------------
+r98 | nanardon | 2006-06-10 18:12:40 +0200 (Sat, 10 Jun 2006) | 1 line
+Changed paths:
+   M /trunk/rpmconstant/configure.ac
+
+- in way to new release
+------------------------------------------------------------------------
+r97 | nanardon | 2006-06-10 18:07:17 +0200 (Sat, 10 Jun 2006) | 1 line
+Changed paths:
+   A /release/rpmconstant/0.1.2 (from /trunk/rpmconstant:96)
+   M /release/rpmconstant/0.1.2/ChangeLog
+   M /trunk/rpmconstant/ChangeLog
+   A /www/download/rpmconstant-0.1.2.tar.gz
+
+- rpmconstant release 0.1.2
+------------------------------------------------------------------------
 r92 | nanardon | 2006-01-06 12:47:45 +0100 (Fri, 06 Jan 2006) | 1 line
 Changed paths:
    M /trunk/rpmconstant/configure.ac

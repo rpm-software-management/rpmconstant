@@ -32,7 +32,6 @@
 #include <rpm/rpmds.h>
 #include <rpm/rpmfi.h>
 #include <rpm/rpmpgp.h>
-#include <rpm/misc.h>
 #include <rpm/rpmbuild.h>
 #include <rpm/rpmlib.h>
 

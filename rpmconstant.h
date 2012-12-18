@@ -34,6 +34,7 @@
 #include <rpm/rpmpgp.h>
 #include <rpm/rpmbuild.h>
 #include <rpm/rpmlib.h>
+#include <rpm/rpmlog.h>
 
 /**
  * A constant pair name/value

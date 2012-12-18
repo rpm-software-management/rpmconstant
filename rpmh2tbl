@@ -32,11 +32,6 @@ my @availlabletables;
 #   'REGEXP' => table,
 
 my %file_const = (
-    'rpmts.h' => {
-        '^_?(RPMVSF_[\w_]+)' => 'rpmvsflags',
-        '^(RPMTRANS_TYPE_[\w_]+)' => 'rpmtsType',
-        '^(RPMTS_OP_[\w_]+)' => 'rpmtsOpX',
-    },
     'rpmlib.h' => {
         '^(RPMDBI_[\w_]+)' => 'rpmdbi',
         '^_?(RPMSENSE_[\w_]+)' => 'rpmsenseflags',
@@ -53,16 +48,6 @@ my %file_const = (
         '^(UNINSTALL_[\w_]+)' => 'rpmEraseInterfaceFlags',
         '^(RPMSIGTAG_[\w_]+)' => 'rpmtagSignature',
     },
-    'rpmps.h' => {
-        '^(RPMPROB_[\w_]+)' => 'rpmProblemType',
-    },
-    'rpmcli.h' => {
-        '^(RPMSIGN_[\w_]+)' => 'rpmSignFlags',
-        '^(VERIFY_[\w_]+)' => 'rpmVerifyFlags',
-    },
-    'rpmdb.h' => {
-        '^(RPMMIRE_[\w_]+)' => 'rpmMireMode',
-    },
     'header.h' => {
         '^(HEADER_MAGIC_[\w_]+)' => 'hMagic',
         '^(RPM_[\w]+)_TYPE$' => 'rpmTagType',
@@ -71,21 +56,36 @@ my %file_const = (
         '^(RPMBUILD_[\w_]+)' => 'rpmBuildFlags',
         '^(PART_[\w_]+)' => 'rpmParseState',
     },
+    'rpmcli.h' => {
+        '^(RPMSIGN_[\w_]+)' => 'rpmSignFlags',
+        '^(VERIFY_[\w_]+)' => 'rpmVerifyFlags',
+    },
+    'rpmdb.h' => {
+        '^(RPMMIRE_[\w_]+)' => 'rpmMireMode',
+    },
     'rpmerr.h' => {
         '^(RPMERR_[\w_]+)' => 'rpmerrCode',
-    },
-    'rpmmacro.h' => {
-        '^(RMIL_[\w_]+)' => 'rpmMacrosContext',
-    },
-    'rpmte.h' => {
-        '^(TR_[\w_]+)' => 'rpmElementType',
     },
     'rpmlog.h' => {
         '^(RPMLOG_(?!PRI$|MAKEPRI$|FAC$|MASK$|UPTO$)[\w_]+)' => 'rpmlog',
     },
+    'rpmmacro.h' => {
+        '^(RMIL_[\w_]+)' => 'rpmMacrosContext',
+    },
     'rpmmessage.h' => {
         '^(RPMCALLBACK_[\w_]+)' => 'rpmCallbackType',
         '^(RPMMESS_[\w_]+)' => 'rpmmess',
+    },
+    'rpmps.h' => {
+        '^(RPMPROB_[\w_]+)' => 'rpmProblemType',
+    },
+    'rpmte.h' => {
+        '^(TR_[\w_]+)' => 'rpmElementType',
+    },
+    'rpmts.h' => {
+        '^_?(RPMVSF_[\w_]+)' => 'rpmvsflags',
+        '^(RPMTRANS_TYPE_[\w_]+)' => 'rpmtsType',
+        '^(RPMTS_OP_[\w_]+)' => 'rpmtsOpX',
     },
 );
 

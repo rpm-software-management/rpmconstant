@@ -1,0 +1,4 @@
+Version 0.1.4 - 17 December 2012
+
+- add support for rpm-4.8 - 4.11
+- fix segfaulting with rpm-4.11 retrieving RPMLOG_*

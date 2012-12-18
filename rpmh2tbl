@@ -57,7 +57,8 @@ my %file_const = (
         '^(RPMERR_[\w_]+)' => 'rpmerrCode',
     },
     'rpmfi.h' => {
-        '^(RPMFILE_[^(STATE_)][\w_]+)' => 'rpmfileAttrs',
+        '^(RPMFILE_[^(STATE_|IS)][\w_]+)' => 'rpmfileAttrs',
+        '^(RPMFILE_ICON)' => 'rpmfileAttrs',
         '^(RPMFILE_STATE_[\w_]+)' => 'rpmfileState',
         '^(PIPE|CDEV|XDIR|BDEV|REG|LINK|SOCK)$' => 'fileTypes',
         '^(FA_[\w_]+)' => 'fileAction',

@@ -27,5 +27,5 @@ rpmh2tbl:
 
 .PHONY: ChangeLog
 
-ChangeLog:
+up-ChangeLog:
 	LC_ALL=C svn update && LC_ALL=C svn log --verbose > ChangeLog

@@ -3,6 +3,7 @@
  */
 
 #include <string.h>
+#include <ctype.h>
 #define RPMCONSTANT_INTERNAL
 #include "rpmconstant.h"
 

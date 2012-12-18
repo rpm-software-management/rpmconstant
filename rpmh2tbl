@@ -33,17 +33,9 @@ my @availlabletables;
 
 my %file_const = (
     'rpmlib.h' => {
-        '^(RPMDBI_[\w_]+)' => 'rpmdbi',
-        '^(RPMRC_[\w_]+)' => 'rpmRC',
-        '^(RPMFILE_[^(STATE_)][\w_]+)' => 'rpmfileAttrs',
-        '^(RPMFILE_STATE_[\w_]+)' => 'rpmfileState',
         '^(RPM_MACHTABLE_[\w_]+)' => 'rpm_machtable',
-        '^(RPMPROB_FILTER_[\w_]+)' => 'rpmprobFilterFlags',
-        '^(FA_[\w_]+)' => 'fileAction',
-        '^(PIPE|CDEV|XDIR|BDEV|REG|LINK|SOCK)$' => 'fileTypes',
         '^(INSTALL_[\w_]+)' => 'rpmInstallInterfaceFlags',
         '^(UNINSTALL_[\w_]+)' => 'rpmEraseInterfaceFlags',
-        '^(RPMSIGTAG_[\w_]+)' => 'rpmtagSignature',
     },
     'header.h' => {
         '^(HEADER_MAGIC_[\w_]+)' => 'hMagic',
@@ -54,7 +46,6 @@ my %file_const = (
     },
     'rpmcli.h' => {
         '^(RPMSIGN_[\w_]+)' => 'rpmSignFlags',
-        '^(VERIFY_[\w_]+)' => 'rpmVerifyFlags',
     },
     'rpmdb.h' => {
         '^(RPMMIRE_[\w_]+)' => 'rpmMireMode',
@@ -64,6 +55,12 @@ my %file_const = (
     },
     'rpmerr.h' => {
         '^(RPMERR_[\w_]+)' => 'rpmerrCode',
+    },
+    'rpmfi.h' => {
+        '^(RPMFILE_[^(STATE_)][\w_]+)' => 'rpmfileAttrs',
+        '^(RPMFILE_STATE_[\w_]+)' => 'rpmfileState',
+        '^(PIPE|CDEV|XDIR|BDEV|REG|LINK|SOCK)$' => 'fileTypes',
+        '^(FA_[\w_]+)' => 'fileAction',
     },
     'rpmlog.h' => {
         '^(RPMLOG_(?!PRI$|MAKEPRI$|FAC$|MASK$|UPTO$)[\w_]+)' => 'rpmlog',
@@ -76,9 +73,13 @@ my %file_const = (
         '^(RPMMESS_[\w_]+)' => 'rpmmess',
     },
     'rpmps.h' => {
-        '^(RPMPROB_[\w_]+)' => 'rpmProblemType',
+        '^(RPMPROB_FILTER_[\w_]+)' => 'rpmprobFilterFlags',
+        '^(RPMPROB_[^(FILTER_)][\w_]+)' => 'rpmProblemType',
+
     },
     'rpmtag.h' => {
+        '^(RPMDBI_[\w_]+)' => 'rpmdbi',
+	'^(RPMSIGTAG_[\w_]+)' => 'rpmtagSignature',
         '^(RPMTAG_[\w_]+)' => 'rpmTag',
         '^(RPM_[\w]+)_TYPE$' => 'rpmTagType',
     },
@@ -90,6 +91,12 @@ my %file_const = (
         '^(RPMTRANS_FLAG_[\w_]+)' => 'rpmtransFlags',
         '^(RPMTRANS_TYPE_[\w_]+)' => 'rpmtsType',
         '^(RPMTS_OP_[\w_]+)' => 'rpmtsOpX',
+    },
+    'rpmtypes.h' => {
+        '^(RPMRC_[\w_]+)' => 'rpmRC',
+    },
+    'rpmvf.h' => {
+        '^(VERIFY_[\w_]+)' => 'rpmVerifyFlags',
     },
 );
 

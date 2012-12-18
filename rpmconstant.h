@@ -33,8 +33,10 @@
 #include <rpm/rpmlog.h>
 #include <rpm/rpmpgp.h>
 #include <rpm/rpmps.h>
+#include <rpm/rpmtag.h>
 #include <rpm/rpmte.h>
 #include <rpm/rpmts.h>
+#include <rpm/rpmvf.h>
 
 /**
  * A constant pair name/value

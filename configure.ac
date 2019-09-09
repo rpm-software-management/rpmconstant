@@ -3,7 +3,7 @@
 # $Id$
 
 AC_PREREQ(2.59)
-AC_INIT(rpmconstant, 0.1.4, tv@mageia.org)
+AC_INIT(rpmconstant, 0.1.5, tv@mageia.org)
 AC_CONFIG_SRCDIR([rpmconstant.c])
 AM_INIT_AUTOMAKE(1.8)
 
